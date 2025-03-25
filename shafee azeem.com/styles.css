@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #16537e;
+    --primary-dark: #233554;
+
+    --secondary-color: #ffd966;
+    --secondary-dark: #f1c232;
+
+    --bg-color: #1d1a2f;
+    --bg-light: aliceblue;
+}
+
+#experience {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+
+}
+
+#experience h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.experience-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.experience-item .year {
+    margin-top: 30px;
+    flex: 1;
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--primary-color);
+    min-width: 150px;
+}
+
+.experience-details {
+    flex: 3;
+}
+
+.experience-details h3 {
+    font-size: h3;
+    font-weight: 600;
+    color: #16537e;
+    margin-bottom: 5px;
+}
+
+.experience-details p {
+    font-size: 16px;
+    color: #a8b2d1;
+    line-height: 1;
+    margin-bottom: 9px;
+}
+
+.experience-details p:hover {
+    color: var(--primary-color)
+}
+
+.experience-details strong {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.experience-item:hover .experience-details h3 {
+    color: var(--secondary-color);
+    transition: 0.3s;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    width: 30%;
+    background-color: rgba(255, 192, 203, 0.17);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+}
+
+.right {
+    flex: 1;
+    margin-left: 30%;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+}
