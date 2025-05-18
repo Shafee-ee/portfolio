@@ -15,29 +15,46 @@
 <body>
     <div class="container">
         <!-- static left section-->
-        <div class="left">
+        <div class="left left-container">
             <div class="profile">
-                <h1>Shafee Azeem Abdul Ghani</h1>
-                <p>Full Stack Web Developer</p>
-                <p>MERN Stack | React.js | Javascript</p>
+                <h1>Shafee Azeem</h1>
+                <p class="title">Front End Developer</p>
+                <p class="skill">MERN Stack | React.js | Javascript</p>
+                <p class="action">I build accessible, pixel-perfect digital experiences for the web.</p>
+
             </div>
-            <nav>
+            <nav class="navigation">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contacts" class="nav-link">Contacts</a></li>
                 </ul>
             </nav>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/shafee-azeem/" target="_blank"
+                    class="social-link linkedin">LinkedIn</a>
+                <a href="https://github.com/Shafee-ee" target="_blank" class="social-link github">GitHub</a>
+                <a href="https://instagram.com/yourusername" target="_blank" class="social-link instagram">Instagram</a>
+            </div>
         </div>
         <!-- Scrollable section-->
         <div class="right">
             <!-- home section-->
             <section id="home">
-                <h2>Hi, I am Shafee Azeem Abdul Ghani</h2>
-                <p>Full-Stack Web Developer</p>
-                <p>I am a Full-Stack Web Developer with expretise in React, Javascript, and the MERN Stack.Passionate
-                    about creating efficient and scalable solution</p>
+                <p>I'm Shafee, a frontend engineer with a strong eye for accessible, pixel-perfect interfaces and clean,
+                    maintainable code. With around 9 years of total experience — including 3 years building real-world
+                    frontend solutions for clients — I specialize in React and modern JavaScript. While frontend is my
+                    core strength, I’m actively upskilling across the MERN stack by building full-stack projects like a
+                    Spotify clone.
+
+                    My 5 years at Amazon, though in a non-tech role, sharpened my communication skills, mentoring
+                    ability, and business understanding from both seller and platform perspectives. A few years ago, I
+                    made a conscious decision to return to tech, reigniting my passion for development. I'm now focused
+                    on growing as an engineer and contributing to teams that value craft, clarity, and impact.
+
+                </p>
             </section>
 
 
@@ -45,66 +62,72 @@
             <!-- Experience section-->
             <h2>Professional Experience</h2>
 
-            <section class="experience-item">
+            <section class="experience">
 
                 <!--Amazon exp-->
-                <div class="year">12/2018 - 06/2024</div>
-                <div class="experience-details">
-                    <h3>AMAZON INDIA LIMITED</h3>
-                    <p><strong>Senior Seller Support Associate[Mentor]-FBA financial Transaction(FFT,FBA,FFTD)</strong>
-                    </p>
-                    <p>At Amazon, I analyzed and processed large seller inventory datasets, ensuring accurate
-                        reimbursements for lost, damaged, and transferred products, which led to a 22% reduction in
-                        resolution errors. I also identified patterns in inventory losses and damages, created tickets
-                        to mitigate future seller impact, and reduced pending actions by 26%. Additionally, I developed
-                        data-driven solutions to optimize case handling, increasing resolution rates by 18%, and
-                        reducing seller wait times. I played a key role in knowledge transfers (KTs) and SOP
-                        development, improving team efficiency and response accuracy, and contributed to a 22% increase
-                        in productivity while reducing average case handling time (AHT) by 24%. I also managed
-                        high-priority escalations, ensuring policy compliance and overall seller satisfaction, earning
-                        the MVP award in 2023 for outstanding contributions. </p>
-                    <p>Bangalore,India</p>
+
+                <div class="experience-item">
+                    <div class="year">2018 - 2024</div>
+                    <div class="experience-details">
+                        <h3>AMAZON INDIA LIMITED</h3>
+                        <p class="work-title">Senior Seller Support Associate[Mentor]</p>
+                        <p class="work-details">At Amazon, I led the analysis and resolution of complex FBA inventory
+                            issues, ensuring
+                            compliance, accuracy, and seller satisfaction. I mentored new team members, facilitated
+                            knowledge transfers, and played a key role in SOP development to streamline workflows. My
+                            proactive handling of high-impact cases and focus on data-driven solutions helped elevate
+                            team performance and optimize resolution efficiency. Recognized for driving operational
+                            excellence and coaching peers toward success.
+
+                        </p>
+                        <p class="work-location">Bangalore,India</p>
+                    </div>
                 </div>
-        </div>
-        <!--Code Studio exp-->
-        <div class="experience-item">
-            <div class="year">03/2016-09/2018</div>
-            <div class="experience-details">
-                <h3>THE CODE STUDIO</h3>
-                <p><strong>Co-Founder & Web Designer/Developer</strong></p>
-                <p>As a co-founder and web designer/developer, I partnered with agencies to execute outsourced
-                    projects, leading the development of 14 websites in 3 months. I also handled the creation of
-                    brochures, branding, and marketing materials, acting as the primary client point of contact
-                    to
-                    ensure satisfaction. My role included designing and developing responsive websites using
-                    HTML5,
-                    CSS3, JavaScript, and Bootstrap, while also managing project planning, client
-                    communications,
-                    UI/UX design, and deployment.</p>
-                <p>Mangalore, India</p>
-            </div>
-        </div>
-        <!--Deccan Airsports exp-->
+                <!--Code Studio exp-->
 
-        <div class="experience-item">
-            <div class="year">09/2015-02/2016</div>
-            <div class="experience-details">
-                <h3>Deccan Airsports</h3>
-                <p><strong>Web Developers</strong></p>
-                <p>At Deccan Airsports, I revamped the company website to improve both functionality and user
-                    experience. I implemented SEO strategies that increased online visibility and generated more
-                    leads. I was also responsible for managing digital assets such as landing pages, social
-                    media content, and promotional materials, and handled IT operations by troubleshooting
-                    website issues and optimizing security.</p>
-                <p>Mangalore, India</p>
-            </div>
-        </div>
 
-        </section>
+                <div class="experience-item">
+                    <div class="year">2016-2018</div>
+                    <div class="experience-details">
+                        <h3>THE CODE STUDIO</h3>
+                        <p class="work-title">Co-Founder & Web Designer/Developer</p>
+                        <p class="work-details">As a co-founder and web designer/developer, I partnered with agencies to
+                            execute outsourced
+                            projects, leading the development of 14 websites in 3 months. I also handled the creation of
+                            brochures, branding, and marketing materials, acting as the primary client point of contact
+                            to
+                            ensure satisfaction. My role included designing and developing responsive websites using
+                            HTML5,
+                            CSS3, JavaScript, and Bootstrap, while also managing project planning, client
+                            communications,
+                            UI/UX design, and deployment.</p>
+                        <p class="work-location">Mangalore, India</p>
+                    </div>
+                </div>
+                <!--Deccan Airsports exp-->
+
+
+                <div class="experience-item">
+                    <div class="year">2015-2016</div>
+                    <div class="experience-details">
+                        <h3>Deccan Airsports</h3>
+                        <p class="work-title">Web Developers</p>
+                        <p class="work-details">At Deccan Airsports, I revamped the company website to improve both
+                            functionality and user
+                            experience. I implemented SEO strategies that increased online visibility and generated more
+                            leads. I was also responsible for managing digital assets such as landing pages, social
+                            media content, and promotional materials, and handled IT operations by troubleshooting
+                            website issues and optimizing security.</p>
+                        <p class="work-location">Mangalore, India</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 
 
     </div>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
