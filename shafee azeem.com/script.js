@@ -19,3 +19,31 @@ window.addEventListener('scroll', () => {
         }
     });
 })
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.project-card').forEach(card => {
+        const imageEl = card.querySelector('img');
+        const images = JSON.parse(card.getAttribute('data-images'));
+        let index = 0;
+        let intervalId;
+
+
+
+        card.addEventListener('mouseenter', () => {
+            intervalId = setInterval(() => {
+                imageEl.style.opacity = 0;
+                setTimeout(() => {
+                    index = (index + 1) % images.length;
+                    imageEl.src = images[index];
+                    imageEl.style.opacity = 1;
+                }, 300)
+            }, 1300)
+        })
+
+        card.addEventListener('mouseleave', () => {
+            clearInterval(intervalId);
+            imageEl.src = images[0]
+        });
+    });
+});
