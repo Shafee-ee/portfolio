@@ -5,11 +5,11 @@
 }
 
 :root {
-    --primary-color: #16537e;
-    --primary-dark: #233554;
+    --primary-color: #ffd966;
+    --primary-dark: #f1c232;
 
-    --secondary-color: #ffd966;
-    --secondary-dark: #f1c232;
+    --secondary-color: #16537e;
+    --secondary-dark: #233554;
 
     --bg-color: #1d1a2f;
     --bg-light: aliceblue;
@@ -31,7 +31,7 @@ body {
 
 .left {
     width: 50vw;
-    background-color: rgba(147, 70, 83, 0.17);
+    background-color: var(--secondary-color);
     position: fixed;
     left: 0;
     top: 0;
@@ -42,6 +42,8 @@ body {
 }
 
 .right {
+    background-color: var(--primary-dark);
+
     margin-left: 50vw;
     width: 50vw;
     height: 100vh;
@@ -126,19 +128,32 @@ body {
 .profile h1 {
     font-family: 'Arial Black', sans-serif;
     font-weight: 800;
+    color: var(--primary-color);
     font-size: 3rem;
 }
 
 .profile .title {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-family: 'Verdana', Geneva, sans-serif;
     font-weight: 600;
     letter-spacing: 2.5px;
+    color: var(--primary-color);
+    padding: 5px;
 
+    transition: border 0.5s ease, color 0.3 ease;
 }
 
-.profile .skill {
-    font-family: 'Verdana', Geneva, sans-serif;
+.profile .title:hover {
+    border: 1px solid red;
+}
 
+
+.profile .skill {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Verdana', Geneva, sans-serif;
 }
 
 .profile {
@@ -193,8 +208,48 @@ body {
 }
 
 
+.m,
+.e,
+.r,
+.n {
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
 
+.m {
+    color: #880000;
+}
 
+.m:hover {
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.e {
+    color: #303030;
+}
+
+.e:hover {
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.r {
+    color: #61dafb;
+}
+
+.r:hover {
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.n {
+    color: #339933;
+}
+
+.n:hover {
+    font-size: 19px;
+    cursor: pointer;
+}
 
 /* social links */
 
@@ -286,7 +341,7 @@ body {
 
 .left,
 .right {
-    padding-left: 100px;
+    padding-left: 150px;
     padding-right: 100px;
 }
 
@@ -309,10 +364,25 @@ body {
 
 }
 
+
+
 .project-image img {
     max-width: 100%;
     max-height: 100%;
+    padding: 5px;
     object-fit: contain;
     transition: opacity 0.5s ease-in-out;
 
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0);
+    /* optional, centers vertically */
+    justify-content: center;
+    font-size: 23px;
+    /* optional, centers horizontally */
+    /* optional, for visibility */
 }

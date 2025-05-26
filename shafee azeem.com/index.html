@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shafee | Portfolio</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="responsive.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
@@ -18,9 +20,15 @@
         <div class="left left-container">
             <div class="profile">
                 <h1>Shafee Azeem</h1>
-                <p class="title">Front End Developer</p>
-                <p class="skill">MERN Stack | React.js | Javascript</p>
-                <p class="action">I build accessible, pixel-perfect digital experiences for the web.</p>
+                <p class="title">
+                    Front End Developer
+                </p>
+                <p class="skill"> <span class="m">M</span> <span class="e">E</span> <span class="r">R</span>
+                    <span class="n">N</span> Stack | React.js |
+                    Javascript
+                </p>
+                <p class="action">I build accessible, pixel-perfect digital
+                    experiences for the web.</p>
 
             </div>
             <nav class="navigation">
@@ -28,21 +36,28 @@
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#experience" class="nav-link">Experience</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#contacts" class="nav-link">Contacts</a></li>
                 </ul>
             </nav>
 
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/shafee-azeem/" target="_blank"
-                    class="social-link linkedin">LinkedIn</a>
-                <a href="https://github.com/Shafee-ee" target="_blank" class="social-link github">GitHub</a>
-                <a href="https://instagram.com/yourusername" target="_blank" class="social-link instagram">Instagram</a>
+                <a href="https://www.linkedin.com/in/shafee-azeem/" target="_blank" class="social-link linkedin"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Shafee-ee" target="_blank" class="social-link github"> <i
+                        class="fab fa-github"></i></a>
+                <a href="https://instagram.com/yourusername" target="_blank" class="social-link instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://instagram.com/yourusername" target="_blank" class="social-link instagram"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class="resume">
+                Download my Resume <i class="fa-solid fa-file-arrow-down"></i></a>
             </div>
         </div>
         <!-- Scrollable section-->
         <div class="right">
             <!-- home section-->
-            <section id="home">
+            <section id="home" class="main">
                 <p>I'm Shafee, a frontend engineer with a strong eye for accessible, pixel-perfect interfaces and clean,
                     maintainable code. With around 9 years of total experience — including 3 years building real-world
                     frontend solutions for clients — I specialize in React and modern JavaScript. While frontend is my
@@ -125,39 +140,50 @@
 
             <section class="projects">
                 <div class="project-card"
-                    data-images='["images/EMS/image1.png","images/EMS/image2.png","images/EMS/image3.png" ]'>
+                    data-images='["images/liveChat/live-chat2.png","images/liveChat/live-chat3.png","images/liveChat/live-chat4.png","images/liveChat/live-chat5.png" ]'>
                     <div class="project-image">
-                        <img src="images/EMS/image1.png" alt="">
+                        <img src="images/liveChat/live-chat1.png" alt="">
                     </div>
                     <div class="project-details">
-                        <h3>AI Image Generator</h3>
-                        <p>This is a full-stack AI Image Generator app where users can enter prompts to generate and
-                            save AI-generated images using the Hugging Face API.</p>
-                        <div class="tech-stack">
-                            <span>MongoDB</span>
-                            <span>Express</span>
-                            <span>React</span>
-                            <span>Node.js</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card"
-                    data-images='["images/EMS/image1.png","images/EMS/image2.png","images/EMS/image3.png" ]'>
-                    <div class="project-image">
-                        <img src=" images/EMS/image1.png" alt="">
-                    </div>
-                    <div class="project-details">
-                        <h3>AI chat bot</h3>
-                        <p>This is an AI-powered chatbot built using the Google Gemini API with a clean, responsive
-                            React frontend and a Node.js backend. It allows users to interact with an intelligent
-                            assistant in real time, simulating natural conversations.
+                        <h3>Live Chat Application</h3>
+                        <p>This is a real-time chat application built with the MERN stack, Tailwind CSS for styling, and
+                            Socket.io for bi-directional communication. It supports instant messaging between users,
+                            user authentication, and active status indicators. The interface is responsive and clean,
+                            designed to mimic modern messaging platforms with real-time updates and typing indicators.
                         </p>
                         <div class="tech-stack">
                             <span>MongoDB</span>
                             <span>Express</span>
                             <span>React</span>
                             <span>Node.js</span>
+                            <span>Tailwind</span>
+                            <span>Socket.io</span>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card"
+                    data-images='["images/ecommerce/ecommerce2.png","images/ecommerce/ecommerce3.png","images/ecommerce/ecommerce4.png","images/ecommerce/ecommerce5.png" ]'>
+                    <div class="project-image">
+                        <img src=" images/ecommerce/ecommerce1.png" alt="">
+                    </div>
+                    <div class="project-details">
+                        <h3>Ecommerce Website</h3>
+                        <p>This is a full-stack eCommerce web application built using the MERN stack. It features a
+                            modern, responsive frontend for product browsing
+                            and a robust backend for handling authentication, cart management, and order processing. The
+                            app supports user registration, secure login, dynamic product listings, and real-time
+                            updates across the shopping flow.
+                        </p>
+                        <div class="tech-stack">
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Tailwind</span>
+
                         </div>
                     </div>
                 </div>
@@ -178,6 +204,8 @@
                             <span>Express</span>
                             <span>React</span>
                             <span>Node.js</span>
+                            <span>Tailwind</span>
+
                         </div>
                     </div>
                 </div>
