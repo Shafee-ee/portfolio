@@ -200,6 +200,27 @@ body {
     margin-bottom: 20px;
 }
 
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* space between h3 and icon */
+    text-decoration: none;
+    color: inherit;
+}
+
+.fa-up-right-from-square {
+    font-size: 15px;
+    margin-top: -7px;
+}
+
+.project-heading {
+    font-size: 1.5rem;
+    /* or whatever you want */
+    margin: 0;
+    /* remove default margin if needed */
+}
+
 /* social links */
 
 .social-links {
