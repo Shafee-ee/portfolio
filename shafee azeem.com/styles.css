@@ -75,7 +75,7 @@ body {
     display: flex;
     font-size: 11px;
     font-weight: 900;
-    color: yellow;
+    color: #FFE548;
     margin-top: 0.5rem;
 
 }
@@ -84,28 +84,32 @@ body {
     width: 80%;
     display: flex;
     flex-direction: column;
+
 }
 
 .experience-details h3 {
     color: var(--primary-dark);
     padding: 5px;
+
 }
 
 .experience-details .work-title {
     font-size: 16px;
     font-weight: 600;
     padding: 3px;
-    color: var(--secondary-dark)
+    color: #3effcc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .experience-details .work-details {
     font-size: 15px;
     padding: 5px;
-    font-style: oblique;
+    color: #84C0C6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .experience-details .work-location {
-    color: var(--primary-dark);
+    color: #FFE548;
     font-weight: 700;
 }
 
@@ -188,7 +192,9 @@ body {
 }
 
 
-
+.project-title {
+    margin-bottom: 20px;
+}
 
 /* social links */
 
