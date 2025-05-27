@@ -229,6 +229,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 2rem;
+    padding: 5px;
 }
 
 .project-image {
@@ -247,15 +248,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-info {
+    margin: 25px 0 25px 0;
+
 }
 
 .project-details h3 {
     margin-bottom: 0.5rem;
-    color: #07090F;
+    color: #f8faff;
+    text-decoration: underline;
 }
 
 .project-details .tech-stack span {
-    background-color: rgba(47, 79, 79, 0.488);
+    background-color: rgba(11, 158, 158, 0.558);
     padding: 4px 8px;
     margin: 4px;
     font-size: 12px;
@@ -265,10 +273,15 @@ body {
 
 
 
-.left,
 .right {
+    padding-left: 100px;
+    padding-right: 150px;
+}
+
+.left {
     padding-left: 150px;
     padding-right: 100px;
+    padding-top: 150px;
 }
 
 
@@ -303,6 +316,7 @@ body {
     justify-content: center;
     font-size: 23px;
     font-weight: 300;
+    margin-bottom: 200px;
     /* optional, centers horizontally */
     /* optional, for visibility */
 }
@@ -337,16 +351,24 @@ body {
     /* Instagram pink */
 }
 
+.resume-div {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    margin-left: -20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .resume {
     padding: 15px 0 15px 20px;
     text-decoration: none;
+    color: rgb(19, 205, 56);
+
 }
 
 .resume:hover {
-    color: rgb(255, 249, 249);
     cursor: pointer;
     text-shadow: 2px 2px 5px rgba(4, 4, 4, 0.3);
+
 }
 
 /* media query*/
@@ -361,6 +383,109 @@ body {
 
     .container {
         display: block;
+    }
+
+    .resume-div {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-left: -20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .left,
+    .right {
+        all: unset;
+        display: block;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        height: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .main {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+    }
+
+    .social-links {
+        margin-top: 20px;
+    }
+
+    .profile h1 {
+        margin-top: 30px;
+        font-size: 40px;
+    }
+
+    .profile .title {
+        font-size: 20px;
+    }
+
+    .profile .skill {
+        font-size: 18px;
+    }
+
+    .profile .action {
+        font-size: 16px;
+        letter-spacing: 1.6px;
+    }
+
+    .right .highlight {
+        display: block;
+        color: rgb(157, 41, 41);
+    }
+
+    /* project card*/
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-image,
+    .project-details {
+        flex: none;
+        width: 100%;
+        padding: 0cap;
+    }
+
+    .project-details {
+        margin-top: 1rem;
+        padding: 15px;
+    }
+
+
+}
+
+
+@media screen and (max-width:1000px) {
+
+    body {
+        background: linear-gradient(220deg, rgba(16, 13, 110, 1) 0%, rgba(4, 43, 89, 1) 62%, rgba(5, 67, 181, 0.91) 100%);
+        min-height: 100vh;
+        color: white;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .resume-div {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-left: -20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     .left,

@@ -28,7 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
         let index = 0;
         let intervalId;
 
-
+        // Auto-slide for mobile
+        const isMobile = window.innerWidth <= 768;
+        if (isMobile) {
+            intervalId = setInterval(() => {
+                index = (index + 1) % images.length;
+                imageEl.src = images[index];
+            }, 2000);
+            return; // don't attach hover events on mobile
+        }
 
         card.addEventListener('mouseenter', () => {
             intervalId = setInterval(() => {
