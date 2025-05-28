@@ -220,6 +220,10 @@ body {
     color: inherit;
 }
 
+.project-link:hover .fa-up-right-from-square {
+    color: rgb(19, 205, 56);
+}
+
 .fa-up-right-from-square {
     font-size: 15px;
     margin-top: -7px;
