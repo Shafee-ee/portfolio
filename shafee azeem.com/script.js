@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let index = 0;
         let intervalId;
 
-        // Auto-slide for mobile
+        // Auto-slide for mobile with width less than 768 px
         const isMobile = window.innerWidth <= 768;
         if (isMobile) {
             intervalId = setInterval(() => {
