@@ -42,7 +42,7 @@ body {
     left: 0;
     top: 0;
     height: 100vh;
-    padding: 2rem;
+    padding: 1rem;
     overflow-y: auto;
     color: white
 }
@@ -133,7 +133,7 @@ body {
 .profile h1 {
     font-family: 'Arial Black', sans-serif;
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .profile .title {
@@ -149,8 +149,8 @@ body {
 }
 
 .profile .skill {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-family: 'Verdana', Geneva, sans-serif;
 }
 
@@ -321,7 +321,8 @@ body {
 .left {
     padding-left: 150px;
     padding-right: 100px;
-    padding-top: 150px;
+    padding-top: 50px;
+    overflow-y: hidden;
 }
 
 
@@ -356,9 +357,11 @@ body {
     background-color: rgba(128, 128, 128, 0);
     /* optional, centers vertically */
     justify-content: center;
-    font-size: 23px;
+    font-size: 22px;
     font-weight: 300;
     margin-bottom: 200px;
+
+
     /* optional, centers horizontally */
     /* optional, for visibility */
 }
@@ -442,6 +445,7 @@ body {
         padding-left: 30px;
         padding-right: 20px;
         box-sizing: border-box;
+        overflow-y: auto;
     }
 
     html,
